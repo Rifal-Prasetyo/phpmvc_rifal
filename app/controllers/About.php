@@ -19,4 +19,11 @@ class About extends Controller
         $this->view('about/page');
         $this->view('templates/footer');
     }
+    public function pdo()
+    {
+        $data['judul'] = 'Pdo info';
+        $this->view('templates/header', $data);
+        $this->view('about/pdo');
+        $this->view('templates/footer');
+    }
 }
